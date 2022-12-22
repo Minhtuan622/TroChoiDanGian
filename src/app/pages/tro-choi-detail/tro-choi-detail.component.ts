@@ -1,5 +1,5 @@
-import {Component, OnInit} from '@angular/core';
-import {TroChoiService} from "../../../public/services/tro-choi/tro-choi.service";
+import { Component, OnInit } from '@angular/core';
+import { TroChoiService } from './../../services/tro-choi/tro-choi.service';
 
 @Component({
   selector: 'app-tro-choi-detail',

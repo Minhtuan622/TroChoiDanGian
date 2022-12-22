@@ -1,0 +1,15 @@
+<mat-tab-group mat-stretch-tabs="false" mat-align-tabs="center">
+  <mat-tab label="Bài viết phổ biến">
+    <div class="post-content">
+      <div class="content posted py-4">
+        <app-card class="d-flex justify-content-center"></app-card>
+      </div>
+      <div class="content list-post">
+        <app-list-info></app-list-info>
+      </div>
+    </div>
+  </mat-tab>
+  <mat-tab label="Bài viết mới nhất">
+    <app-new-post></app-new-post>
+  </mat-tab>
+</mat-tab-group>

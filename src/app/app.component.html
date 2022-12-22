@@ -1,32 +1,40 @@
-<mat-drawer-container class="example-container" autosize>
+<mat-drawer-container class="example-container d-flex flex-column" autosize>
   <mat-toolbar>
-    <button mat-icon-button
-            aria-label="Example icon-button with menu icon"
-            type="button"
-            mat-button (click)="drawer.toggle()">
+    <button
+      mat-icon-button
+      aria-label="Example icon-button with menu icon"
+      type="button"
+      mat-button
+      (click)="drawer.toggle()"
+    >
       <mat-icon>menu</mat-icon>
     </button>
     <span>GallifreyPlanet</span>
     <span class="example-spacer"></span>
-    <button mat-icon-button
-            aria-label="Example icon-button with heart icon">
+    <button mat-icon-button aria-label="Example icon-button with heart icon">
       <mat-icon>
-        <a class="link-nav" href="https://www.facebook.com/Minhtuan622/">facebook</a>
+        <a class="link-nav" href="https://www.facebook.com/Minhtuan622/"
+          >facebook</a
+        >
       </mat-icon>
     </button>
   </mat-toolbar>
 
   <mat-drawer #drawer class="px-3">
     <mat-selection-list #item [multiple]="false">
-      <mat-list-option class="my-2" *ngFor="let items of headings" [value]="items.name">
-        <a class="link-nav" routerLink="{{items.key}}">{{items.name}}</a>
+      <mat-list-option
+        class="my-2"
+        *ngFor="let items of headings"
+        [value]="items.name"
+        routerLink="{{ items.key }}"
+      >
+        <a class="link-nav">{{ items.name }}</a>
       </mat-list-option>
     </mat-selection-list>
   </mat-drawer>
 
-  <div class="container">
+  <div class="container flex-fill">
     <router-outlet></router-outlet>
   </div>
   <app-footer></app-footer>
 </mat-drawer-container>
-

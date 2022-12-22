@@ -11,7 +11,7 @@ interface sidenavlist {
 export class AppComponent {
   showFiller = false;
   headings: sidenavlist[] = [
-    {key: 'home', name: "Trang chủ"},
+    {key: '', name: "Trang chủ"},
     {key: 'list-game', name: "Danh sách trò chơi"},
     {key: 'list-post', name: "Danh sách bài viết"}
   ];

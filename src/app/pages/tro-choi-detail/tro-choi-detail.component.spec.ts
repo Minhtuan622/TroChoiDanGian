@@ -1,6 +1,6 @@
+import { TroChoiDetailComponent } from './tro-choi-detail.component';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TroChoiDetailComponent } from './tro-choi-detail.component';
 
 describe('TroChoiDetailComponent', () => {
   let component: TroChoiDetailComponent;

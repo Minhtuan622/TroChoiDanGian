@@ -1,15 +1,15 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import {HomeComponent} from "./public/components/home/home.component";
-import {ListGameComponent} from "./public/components/list-game/list-game.component";
-import {ListPostComponent} from "./public/components/list-post/list-post.component";
-import {TroChoiDetailComponent} from "./share/components/tro-choi-detail/tro-choi-detail.component";
+import { ListGameComponent } from './components/list-game/list-game.component';
+import { ListPostComponent } from "./components/list-post/list-post.component";
+import { HomeComponent } from './pages/home/home.component';
+import { TroChoiDetailComponent } from './pages/tro-choi-detail/tro-choi-detail.component';
 
 const routes: Routes = [
-  {path: 'home', component: HomeComponent},
-  {path: 'list-game', component: ListGameComponent},
-  {path: 'list-post', component: ListPostComponent},
-  {path: 'game-detail', component: TroChoiDetailComponent}
+  { path: '', component: HomeComponent },
+  { path: 'list-game', component: ListGameComponent },
+  { path: 'list-post', component: ListPostComponent },
+  { path: 'game-detail', component: TroChoiDetailComponent }
 ];
 
 @NgModule({
