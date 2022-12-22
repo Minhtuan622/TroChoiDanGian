@@ -1,0 +1,24 @@
+<div class="troChoiDetail">
+  <div class="headerdetail">
+    <h1>{{this.name}}</h1>
+  </div>
+
+  <div class="contentdetail">
+    <div>
+      <h3>Thông tin về {{this.name}}</h3>
+      <p>{{this.detail}}</p>
+    </div>
+
+    <div>
+      <h3>Cách chơi</h3>
+      <p>{{this.howtoplay}}</p>
+    </div>
+
+    <div *ngIf="this.orther">
+      <h3>Các biến thể của trò chơi</h3>
+      <p>{{this.orther}}</p>
+    </div>
+
+  </div>
+  <div class="footerdetail"></div>
+</div>

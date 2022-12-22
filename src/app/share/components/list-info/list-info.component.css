@@ -1,0 +1,26 @@
+.info-item{
+  margin-block: 30px;
+}
+.widget-title{
+  background-color: #ececec;
+  font-size: 14px;
+  font-size: .875rem;
+  padding: 12px;
+  color: #000;
+  margin-block: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  word-wrap: break-word;
+  position: relative;
+}
+.widget-title::after{
+  position: absolute;
+  bottom: -8px;
+  left: 48%;
+  left: calc(50% - 8px);
+  border: 8px solid #ececec;
+  border-color: #ececec transparent;
+  border-bottom: none;
+  content: "";
+}
+
